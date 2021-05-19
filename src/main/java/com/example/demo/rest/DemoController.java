@@ -11,12 +11,12 @@ import com.example.demo.pojo.CharacterBDO;
 public class DemoController {
 
     @GetMapping(produces = { "application/json" })
-    public CharacterBDO getCharacterBDO(String id) {
+    public CharacterBDO getCharacterBDO(String id, String name, String classname, Integer level) {
 	CharacterBDO character = new CharacterBDO();
 	character.setId(id);
-	character.setName("FulmineV");
-	character.setClassname("Kunoichi");
-	character.setLevel(62);
+	character.setName(name);
+	character.setClassname(classname);
+	character.setLevel(level);
 	return character;
     }
 
