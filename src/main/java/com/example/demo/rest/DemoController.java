@@ -14,7 +14,7 @@ public class DemoController {
     public CharacterBDO getCharacterBDO(String id, String name, String classname, Integer level) {
 	CharacterBDO character = new CharacterBDO();
 	character.setId(id);
-	character.setName(name);
+	character.setName("Jhon");
 	character.setClassname(classname);
 	character.setLevel(level);
 	return character;
